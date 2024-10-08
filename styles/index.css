@@ -71,6 +71,7 @@ header img {
     font-weight: 500;
     border-radius: 5px;
     border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 
         &:hover {
@@ -87,6 +88,7 @@ header img {
     font-weight: 500;
     border-radius: 5px;
     border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 
         &:hover {
@@ -114,9 +116,11 @@ header img {
 }
 
 .sidebar i {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    top: 0;
+    right: 0;
+    position: fixed;
+    align-items: center;
+    margin: 20px;
     color: #08003f;
 
         &:hover {
@@ -126,7 +130,6 @@ header img {
 
 
 .sidebar-links {
-    height: 50px;
     list-style: none;
     line-height: 2;
 }
@@ -175,6 +178,9 @@ header img {
     
     .sidebar {
         display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     .sidebar i {
@@ -203,15 +209,6 @@ header img {
 }
 
 
-
-
-.navbar i {
-    color: #ffc050;
-    height: 100%;
-    width: auto;
-    display: none;
-    align-items: center;
-}
 
 
 /*fonts

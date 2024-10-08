@@ -162,52 +162,17 @@ header img {
 }
 
 @media screen and (max-width: 700px) {
-    
-    .topnav img {
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
+    .nav-links,
     .btns {
         display: none;
     }
-    
     .sidebar {
         display: flex;
         position: absolute;
         right: 0;
         top: 0;
     }
-
-    .sidebar i {
-        display: flex;
-    }
-
 }
-
-
-@media screen and (max-width: 350px) {
-    
-
-    .nav-links {
-        display: none;
-    }
-
-    .btns {
-        display: none;
-    }
-    
-    .sidebar {
-        display: flex;
-    }
-
-    
-}
-
 
 
 

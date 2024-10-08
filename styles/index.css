@@ -5,23 +5,31 @@
 }
 
 body {
+    background-color: #ffc050;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     font-family: "Rubik", sans-serif;
+    background-color: #08003f;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 120px;
+    width: 120px;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    height: 150px;
-    width: auto;
+    height: auto;
     background-color: #08003f;
     padding: 20px;
     gap: 30px;
-}
-
-.navbar img {
-    height: 120px;
-    width: 120px;
 }
 
 .nav-links {
@@ -30,12 +38,18 @@ body {
     gap: 30px;
 }
 
+.nav-links li {
+    align-self: center;
+    height: 50px;
+}
+
 .nav-links li a {
+    height: 100%;
     text-decoration: none;
-    font-weight: bold;
     letter-spacing: 3px;
     color: #ffc050;
     font-size: 16px;
+    font-weight: 500;
     transition: 0,3s;
 
         &:hover {
@@ -43,6 +57,7 @@ body {
             color: #fff;
         }
     }
+
 
 .btns {
     display: flex;
@@ -56,7 +71,8 @@ body {
     height: 50px;
     background-color: #ffc050;
     color: #08003f;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     border-radius: 5px;
     border: none;
     transition: 0.3s;
@@ -71,7 +87,8 @@ body {
     height: 50px;
     background-color: #00c599;
     color: #08003f;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     border-radius: 5px;
     border: none;
     transition: 0.3s;
@@ -80,6 +97,41 @@ body {
             background-color: #ffc050;
         }
 }
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #08003f;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar-links {
+    height: 50px;
+    list-style: none;
+    gap: 30px;
+}
+
+.sidebar-links li {
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #ffc050;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0,3s;
+
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
 
 
 
